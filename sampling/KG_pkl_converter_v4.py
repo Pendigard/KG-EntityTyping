@@ -1,4 +1,4 @@
-#%%
+# -*- coding: utf-8 -*-
 import pickle
 import pandas as pd
 import os
@@ -38,6 +38,7 @@ def convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc =
     df_et_valid = pd.read_csv(os.path.join(KG_path, 'ET_valid.txt'), sep='\t', header=None, names=['entity', 'type'])
 
     df_et_train_full = pd.concat([df_et_train, df_et_valid], ignore_index=True)
+    # Le pkl original de LMET est construit sur le train et le valid, donc on fait pareil ici
 
     # select les entities dans kg
     kg_entities = set(df_kg['entity']).union(set(df_kg['entity_2']))
@@ -88,7 +89,7 @@ def convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc =
         if len(et) == 0: # Cas où il n'y a pas de type pour l'entité en train
             # On ajoute le dernier type (Comme dans le LMET original)
             last_type = df_type['id'].iloc[-1]
-            last_clust = df_type['clust_id'].iloc[-1]
+            last_clust = df_type['clust_id'].iloc[-1] # Prend le cluster du dernier type
             et.append([eid, last_clust, last_type]) 
         for i in range(len(kg)):
             kg_rel = kg[i]
@@ -148,35 +149,17 @@ def compare_pkl_files(file1, file2):
     # If no differences were found
     print(f"Files {file1} and {file2} are identical.")
 
-# %%
 
 
-KG_path = '../data/YAGO43kET'
-KG_file = '../data/YAGO43kET/KG_train.txt'
-ET_file = '../data/YAGO43kET/ET_train.txt'
-output_file = 'lmet_train_sampled.pkl'
-triplets_list = convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc=get_cluster_name_from_type)
-# %%
+if __name__ == "__main__":
+    # Exemple d'utilisation
+    kg_set = 'train'
+    KG_path = '../data/YAGO43kET' # chemin vers le dossier contenant les fichiers KG non échantillonnés
+    # Les fichiers ET non échantillonné et les .tsv
+    KG_file = '../data/YAGO43kET/KG_train.txt' # KG samplé toujours train
+    ET_file = f'../data/YAGO43kET/ET_{kg_set}.txt' # L'ET samplé
+    output_file = f'lmet_{kg_set}_sampled.pkl'
+    triplets_list = convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc=get_cluster_name_from_type)
+    
+#    compare_pkl_files(f'../data/YAGO43kET/LMET_{kg_set}.pkl', f'lmet_test_{kg_set}.pkl') # Fonction de comparaison
 
-KG_path = '../data/YAGO43kET'
-KG_file = '../data/YAGO43kET/KG_train.txt'
-ET_file = '../data/YAGO43kET/ET_test.txt'
-output_file = 'lmet_test_sampled.pkl'
-triplets_list = convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc=get_cluster_name_from_type)
-
-#%%
-
-KG_path = '../data/YAGO43kET'
-KG_file = '../data/YAGO43kET/KG_train.txt'
-ET_file = '../data/YAGO43kET/ET_valid.txt'
-output_file = 'lmet_valid_sampled.pkl'
-triplets_list = convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc=get_cluster_name_from_type)
-
-#%%
-compare_pkl_files('../data/YAGO43kET/LMET_test.pkl', 'lmet_test_sampled.pkl')
-
-# %%
-
-with open('../data/YAGO43kET/LMET_test.pkl', 'rb') as f:
-    data1 = pickle.load(f)
-# %%
