@@ -15,13 +15,13 @@ def filter_ET(ET_path, KG_sampled_path, ET_output_path):
     df_et.to_csv(ET_output_path, sep='\t', header=False, index=False)
 
 #%%
+if __name__ == '__main__':
+    ET_types = ['test', 'train', 'valid']
 
-ET_types = ['test', 'train', 'valid']
+    for ET_type in ET_types:
+        ET_path = f'../data/YAGO43kET/ET_{ET_type}.txt'
+        KG_sampled_path = '../data_sampled/KG_train_sampled.txt'
+        ET_output_path = f'../data_sampled/ET_{ET_type}_sampled.txt'
 
-for ET_type in ET_types:
-    ET_path = f'../data/YAGO43kET/ET_{ET_type}.txt'
-    KG_sampled_path = '../data_sampled/KG_train_sampled.txt'
-    ET_output_path = f'../data_sampled/ET_{ET_type}_sampled.txt'
-
-    filter_ET(ET_path, KG_sampled_path, ET_output_path)
+        filter_ET(ET_path, KG_sampled_path, ET_output_path)
 # %%
