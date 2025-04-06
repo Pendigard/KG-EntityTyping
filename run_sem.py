@@ -11,6 +11,8 @@ def main(args):
     use_cuda = args['cuda'] and torch.cuda.is_available()
     data_path = os.path.join(args['data_dir'], args['dataset'])
     save_path = os.path.join(args['save_dir'], args['save_path'])
+    train_from_save = args['train_from_save']
+        
 
     e2id = read_id(os.path.join(data_path, 'entities.tsv'))
     r2id = read_id(os.path.join(data_path, 'relations.tsv'))
@@ -51,6 +53,13 @@ def main(args):
 
     if use_cuda:
         model = model.to(device)
+    if train_from_save:
+        # load best_model.pkl
+        if os.path.exists(os.path.join(save_path, 'best_model.pkl')):
+            model.load_state_dict(torch.load(os.path.join(save_path, 'best_model.pkl')))
+            logging.info('Load model from %s' % os.path.join(save_path, 'best_model.pkl'))
+        else:
+            logging.warning('No model file found at %s' % os.path.join(save_path, 'best_model.pkl'))
     for name, param in model.named_parameters():
         logging.debug('Parameter %s: %s, require_grad=%s' % (name, str(param.size()), str(param.requires_grad)))
 
@@ -331,6 +340,8 @@ def get_params():
                         help='ablation choice')
     parser.add_argument('--log_name', type=str, default='log')
     parser.add_argument('--semantic', type=str, default='hybrid')
+
+    parser.add_argument('--train_from_save', action='store_true', default=False)
 
     args, _ = parser.parse_known_args()
     print(args)
