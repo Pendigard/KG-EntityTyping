@@ -1,0 +1,102 @@
+2025-04-06 13:19:42 DEBUG    epoch 0: loss: 0.072231    pos_loss: 0.001306      neg_loss: 0.070925
+2025-04-06 13:22:23 DEBUG    epoch 1: loss: 0.003340    pos_loss: 0.001666      neg_loss: 0.001674
+2025-04-06 13:25:04 DEBUG    epoch 2: loss: 0.002695    pos_loss: 0.001749      neg_loss: 0.000945
+2025-04-06 13:27:45 DEBUG    epoch 3: loss: 0.002506    pos_loss: 0.001792      neg_loss: 0.000713
+2025-04-06 13:30:26 DEBUG    epoch 4: loss: 0.002430    pos_loss: 0.001815      neg_loss: 0.000615
+2025-04-06 13:33:08 DEBUG    epoch 5: loss: 0.002394    pos_loss: 0.001833      neg_loss: 0.000560
+2025-04-06 13:35:49 DEBUG    epoch 6: loss: 0.002375    pos_loss: 0.001843      neg_loss: 0.000532
+2025-04-06 13:38:30 DEBUG    epoch 7: loss: 0.002366    pos_loss: 0.001832      neg_loss: 0.000535
+2025-04-06 13:41:12 DEBUG    epoch 8: loss: 0.002352    pos_loss: 0.001808      neg_loss: 0.000545
+2025-04-06 13:43:53 DEBUG    epoch 9: loss: 0.002317    pos_loss: 0.001772      neg_loss: 0.000545
+2025-04-06 13:46:35 DEBUG    epoch 10: loss: 0.002285   pos_loss: 0.001758      neg_loss: 0.000527
+2025-04-06 13:49:16 DEBUG    epoch 11: loss: 0.002255   pos_loss: 0.001741      neg_loss: 0.000515
+2025-04-06 13:51:58 DEBUG    epoch 12: loss: 0.002229   pos_loss: 0.001722      neg_loss: 0.000507
+2025-04-06 13:54:40 DEBUG    epoch 13: loss: 0.002199   pos_loss: 0.001696      neg_loss: 0.000503
+2025-04-06 13:57:21 DEBUG    epoch 14: loss: 0.002166   pos_loss: 0.001664      neg_loss: 0.000502
+2025-04-06 14:00:03 DEBUG    epoch 15: loss: 0.002130   pos_loss: 0.001633      neg_loss: 0.000496
+2025-04-06 14:02:44 DEBUG    epoch 16: loss: 0.002096   pos_loss: 0.001604      neg_loss: 0.000492
+2025-04-06 15:37:36 DEBUG    epoch 50: loss: 0.001121   pos_loss: 0.000750      neg_loss: 0.000371
+2025-04-06 15:40:18 DEBUG    epoch 51: loss: 0.001091   pos_loss: 0.000737      neg_loss: 0.000354
+2025-04-06 15:42:59 DEBUG    epoch 52: loss: 0.001043   pos_loss: 0.000698      neg_loss: 0.000345
+2025-04-06 15:45:41 DEBUG    epoch 53: loss: 0.001024   pos_loss: 0.000680      neg_loss: 0.000344
+2025-04-06 15:48:23 DEBUG    epoch 54: loss: 0.001010   pos_loss: 0.000669      neg_loss: 0.000341
+2025-04-06 15:51:04 DEBUG    epoch 55: loss: 0.000997   pos_loss: 0.000658      neg_loss: 0.000339
+2025-04-06 15:53:46 DEBUG    epoch 56: loss: 0.000982   pos_loss: 0.000644      neg_loss: 0.000337
+2025-04-06 15:56:28 DEBUG    epoch 57: loss: 0.000970   pos_loss: 0.000634      neg_loss: 0.000336
+2025-04-06 15:59:09 DEBUG    epoch 58: loss: 0.000957   pos_loss: 0.000623      neg_loss: 0.000334
+2025-04-06 16:01:51 DEBUG    epoch 59: loss: 0.000941   pos_loss: 0.000611      neg_loss: 0.000330
+2025-04-06 16:04:33 DEBUG    epoch 60: loss: 0.000929   pos_loss: 0.000601      neg_loss: 0.000328
+2025-04-06 16:04:33 DEBUG    -----------------------valid step-----------------------
+2025-04-06 16:05:08 DEBUG    MRR: 0.510487
+2025-04-06 16:05:08 DEBUG    MR: 31.491368
+2025-04-06 16:05:08 DEBUG    HIT@1: 0.410291
+2025-04-06 16:05:08 DEBUG    HIT@3: 0.551963
+2025-04-06 16:05:08 DEBUG    HIT@10: 0.708700
+2025-04-06 16:05:08 DEBUG    -----------------------test step-----------------------
+2025-04-06 16:06:04 DEBUG    MRR: 0.311606
+2025-04-06 16:06:04 DEBUG    MR: 1851.564120
+2025-04-06 16:06:04 DEBUG    HIT@1: 0.236528
+2025-04-06 16:06:04 DEBUG    HIT@3: 0.337824
+2025-04-06 16:06:04 DEBUG    HIT@10: 0.457026
+2025-04-06 16:08:54 DEBUG    epoch 61: loss: 0.000917   pos_loss: 0.000592      neg_loss: 0.000326
+2025-04-06 16:11:36 DEBUG    epoch 62: loss: 0.000906   pos_loss: 0.000582      neg_loss: 0.000324
+2025-04-06 16:14:18 DEBUG    epoch 63: loss: 0.000891   pos_loss: 0.000570      neg_loss: 0.000321
+2025-04-06 16:16:59 DEBUG    epoch 64: loss: 0.000876   pos_loss: 0.000558      neg_loss: 0.000318
+2025-04-06 16:19:41 DEBUG    epoch 65: loss: 0.000865   pos_loss: 0.000550      neg_loss: 0.000315
+2025-04-06 16:22:22 DEBUG    epoch 66: loss: 0.000853   pos_loss: 0.000539      neg_loss: 0.000314
+2025-04-06 16:25:04 DEBUG    epoch 67: loss: 0.000839   pos_loss: 0.000530      neg_loss: 0.000309
+2025-04-06 16:27:46 DEBUG    epoch 68: loss: 0.000831   pos_loss: 0.000522      neg_loss: 0.000308
+2025-04-06 16:30:28 DEBUG    epoch 69: loss: 0.000818   pos_loss: 0.000513      neg_loss: 0.000305
+2025-04-06 16:33:09 DEBUG    epoch 70: loss: 0.000808   pos_loss: 0.000505      neg_loss: 0.000303
+2025-04-06 16:35:51 DEBUG    epoch 71: loss: 0.000794   pos_loss: 0.000495      neg_loss: 0.000299
+2025-04-06 16:38:33 DEBUG    epoch 72: loss: 0.000783   pos_loss: 0.000486      neg_loss: 0.000297
+2025-04-06 16:41:15 DEBUG    epoch 73: loss: 0.000771   pos_loss: 0.000477      neg_loss: 0.000294
+2025-04-06 16:43:57 DEBUG    epoch 74: loss: 0.000760   pos_loss: 0.000470      neg_loss: 0.000290
+2025-04-06 16:46:39 DEBUG    epoch 75: loss: 0.000750   pos_loss: 0.000461      neg_loss: 0.000289
+2025-04-06 16:49:21 DEBUG    epoch 76: loss: 0.000739   pos_loss: 0.000453      neg_loss: 0.000286
+2025-04-06 16:52:02 DEBUG    epoch 77: loss: 0.000728   pos_loss: 0.000446      neg_loss: 0.000282
+2025-04-06 16:54:44 DEBUG    epoch 78: loss: 0.000720   pos_loss: 0.000439      neg_loss: 0.000281
+2025-04-06 16:57:25 DEBUG    epoch 79: loss: 0.000710   pos_loss: 0.000431      neg_loss: 0.000278
+2025-04-06 17:00:07 DEBUG    epoch 80: loss: 0.000696   pos_loss: 0.000423      neg_loss: 0.000273
+2025-04-06 17:00:07 DEBUG    -----------------------valid step-----------------------
+2025-04-06 17:00:42 DEBUG    MRR: 0.678704
+2025-04-06 17:00:42 DEBUG    MR: 19.204807
+2025-04-06 17:00:42 DEBUG    HIT@1: 0.577183
+2025-04-06 17:00:42 DEBUG    HIT@3: 0.742383
+2025-04-06 17:00:42 DEBUG    HIT@10: 0.867299
+2025-04-06 17:00:42 DEBUG    -----------------------test step-----------------------
+2025-04-06 17:01:38,227 DEBUG    MRR: 0.326368
+2025-04-06 17:01:38,227 DEBUG    MR: 1838.324693
+2025-04-06 17:01:38,227 DEBUG    HIT@1: 0.247101
+2025-04-06 17:01:38,228 DEBUG    HIT@3: 0.355048
+2025-04-06 17:01:38,228 DEBUG    HIT@10: 0.483288
+poch 89: loss: 0.000614 pos_loss: 0.000365      neg_loss: 0.000249
+2025-04-06 17:28:44 DEBUG    epoch 90: loss: 0.000604   pos_loss: 0.000357      neg_loss: 0.000247
+2025-04-06 17:31:25 DEBUG    epoch 91: loss: 0.000600   pos_loss: 0.000355      neg_loss: 0.000245
+2025-04-06 17:34:07 DEBUG    epoch 92: loss: 0.000585   pos_loss: 0.000344      neg_loss: 0.000241
+2025-04-06 17:36:49 DEBUG    epoch 93: loss: 0.000578   pos_loss: 0.000340      neg_loss: 0.000237
+2025-04-06 17:39:31 DEBUG    epoch 94: loss: 0.000570   pos_loss: 0.000334      neg_loss: 0.000236
+2025-04-06 17:42:12 DEBUG    epoch 95: loss: 0.000562   pos_loss: 0.000330      neg_loss: 0.000232
+2025-04-06 17:44:54 DEBUG    epoch 96: loss: 0.000552   pos_loss: 0.000321      neg_loss: 0.000230
+2025-04-06 17:47:36 DEBUG    epoch 97: loss: 0.000547   pos_loss: 0.000319      neg_loss: 0.000228
+2025-04-06 17:50:18 DEBUG    epoch 98: loss: 0.000536   pos_loss: 0.000312      neg_loss: 0.000225
+2025-04-06 17:52:59 DEBUG    epoch 99: loss: 0.000531   pos_loss: 0.000309      neg_loss: 0.000222
+2025-04-06 17:55:41 DEBUG    epoch 100: loss: 0.000522  pos_loss: 0.000301      neg_loss: 0.000221
+2025-04-06 17:55:41 DEBUG    -----------------------valid step-----------------------
+2025-04-06 17:56:16 DEBUG    MRR: 0.797333
+2025-04-06 17:56:16 DEBUG    MR: 12.923155
+2025-04-06 17:56:16 DEBUG    HIT@1: 0.719702
+2025-04-06 17:56:16 DEBUG    HIT@3: 0.852911
+2025-04-06 17:56:16 DEBUG    HIT@10: 0.929418
+2025-04-06 17:56:16 DEBUG    -----------------------test step-----------------------
+2025-04-06 17:57:12 DEBUG    MRR: 0.331771
+2025-04-06 17:57:12 DEBUG    MR: 1712.829980
+2025-04-06 17:57:12 DEBUG    HIT@1: 0.250853
+2025-04-06 17:57:12 DEBUG    HIT@3: 0.365962
+2025-04-06 17:57:12 DEBUG    HIT@10: 0.489939
+2025-04-06 17:57:21 DEBUG    -----------------------best test step-----------------------
+2025-04-06 17:58:18 DEBUG    MRR: 0.331771
+2025-04-06 17:58:18 DEBUG    MR: 1712.829980
+2025-04-06 17:58:18 DEBUG    HIT@1: 0.250853
+2025-04-06 17:58:18 DEBUG    HIT@3: 0.365962
+2025-04-06 17:58:18 DEBUG    HIT@10: 0.489939

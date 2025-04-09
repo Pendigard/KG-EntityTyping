@@ -1,0 +1,51 @@
+wroteMusicFor	wrote music for
+worksAt	works at
+isMarriedTo	is married to
+isOwnedBy	is owned by
+hasGender	has gender
+playsFor	plays for
+directed	directed
+isTheCountryOfCitizenshipOf	is the country of citizenship of
+actedIn	acted in
+dealsWith	deals with
+featured	featured
+wasBornIn	was born in
+isCitizenOf	is citizen of
+contains	contains
+isPoliticianOf	is politician of
+livesIn	lives in
+graduatedFrom	graduated from
+hasMusicalRole	has musical role
+diedIn	died in
+hasWebsite	has website
+wasParticipatedInBy	was participated in by
+hasCapital	has capital
+isThePlaceWhereDied	is the place where died
+isPlayedForBy	is played for by
+participatedIn	participated in
+isLeaderOf	is leader of
+owns	owns
+hasChild	has child
+hasOfficialLanguage	has official language
+hasAcademicAdvisor	has academic advisor
+influences	influences
+isInfluencedBy	is influenced by
+imports	imports
+isInterestedIn	is interested in
+isAnAcademicAdvisorOf	is an academic advisor of
+hadMusicWrittenBy	had music written by
+isKnownFor	is known for
+exports	exports
+created	created
+isConnectedTo	is connected to
+hasNeighbor	has neighbor
+wasTheLocationOf	was the location of
+edited	edited
+isLivedInBy	is lived in by
+isAffiliatedTo	is affiliated to
+isAMusicalRoleHeldBy	is a musical role held by
+isLocatedIn	is located in
+happenedIn	happened in
+isTheGenderOf	is the gender of
+hasWonPrize	has won prize
+hasCurrency	has currency

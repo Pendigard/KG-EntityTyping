@@ -1,3 +1,4 @@
+#%%
 # -*- coding: utf-8 -*-
 import pickle
 import pandas as pd
@@ -153,7 +154,7 @@ def compare_pkl_files(file1, file2):
 
 if __name__ == "__main__":
     # Exemple d'utilisation
-    kg_set = 'train'
+    kg_set = 'test'
     KG_path = '../data/YAGO43kET' # chemin vers le dossier contenant les fichiers KG non échantillonnés
     # Les fichiers ET non échantillonné et les .tsv
     KG_file = '../data/YAGO43kET/KG_train.txt' # KG samplé toujours train
@@ -161,5 +162,7 @@ if __name__ == "__main__":
     output_file = f'lmet_{kg_set}_sampled.pkl'
     triplets_list = convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc=get_cluster_name_from_type)
     
-#    compare_pkl_files(f'../data/YAGO43kET/LMET_{kg_set}.pkl', f'lmet_test_{kg_set}.pkl') # Fonction de comparaison
+    compare_pkl_files(f'../data/YAGO43kET/LMET_{kg_set}.pkl', f'lmet_{kg_set}_sampled.pkl') # Fonction de comparaison
 
+
+# %%

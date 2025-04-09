@@ -1,0 +1,374 @@
+2025-04-06 20:05:42 DEBUG    Starting new HTTPS connection (1): huggingface.co:443
+2025-04-06 20:05:42 DEBUG    https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2025-04-06 20:05:42 DEBUG    https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2025-04-06 20:05:42 DEBUG    https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.embeddings.word_embeddings.weight: torch.Size([30522, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.embeddings.position_embeddings.weight: torch.Size([512, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.embeddings.token_type_embeddings.weight: torch.Size([2, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.embeddings.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.embeddings.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.0.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.1.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.2.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.3.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.4.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.5.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.6.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.7.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.8.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.9.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.10.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.attention.self.query.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.attention.self.query.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.attention.self.key.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.attention.self.key.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.attention.self.value.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.attention.self.value.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.attention.output.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.attention.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.intermediate.dense.bias: torch.Size([3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.output.dense.weight: torch.Size([768, 3072]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.output.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.output.LayerNorm.weight: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.encoder.layer.11.output.LayerNorm.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.pooler.dense.weight: torch.Size([768, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter lm_encoder.pooler.dense.bias: torch.Size([768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter decoder.weight: torch.Size([18263, 768]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter decoder.bias: torch.Size([18263]), require_grad=True
+2025-04-06 20:05:42 DEBUG    Parameter mha.weight: torch.Size([5, 1]), require_grad=False
+2025-04-06 20:05:43 DEBUG    https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-04-06 20:08:19 DEBUG    epoch 0: loss: 0.079001	pos_loss: 0.001312	neg_loss: 0.077689
+2025-04-06 20:11:00 DEBUG    epoch 1: loss: 0.003130	pos_loss: 0.001688	neg_loss: 0.001442
+2025-04-06 20:13:41 DEBUG    epoch 2: loss: 0.002599	pos_loss: 0.001768	neg_loss: 0.000831
+2025-04-06 20:16:22 DEBUG    epoch 3: loss: 0.002456	pos_loss: 0.001806	neg_loss: 0.000650
+2025-04-06 20:19:04 DEBUG    epoch 4: loss: 0.002403	pos_loss: 0.001821	neg_loss: 0.000581
+2025-04-06 20:21:45 DEBUG    epoch 5: loss: 0.002374	pos_loss: 0.001819	neg_loss: 0.000555
+2025-04-06 20:24:26 DEBUG    epoch 6: loss: 0.002348	pos_loss: 0.001817	neg_loss: 0.000531
+2025-04-06 20:27:08 DEBUG    epoch 7: loss: 0.002331	pos_loss: 0.001805	neg_loss: 0.000526
+2025-04-06 20:29:49 DEBUG    epoch 8: loss: 0.002300	pos_loss: 0.001768	neg_loss: 0.000532
+2025-04-06 20:32:30 DEBUG    epoch 9: loss: 0.002264	pos_loss: 0.001744	neg_loss: 0.000519
+2025-04-06 20:35:11 DEBUG    epoch 10: loss: 0.002235	pos_loss: 0.001727	neg_loss: 0.000508
+2025-04-06 20:37:53 DEBUG    epoch 11: loss: 0.002207	pos_loss: 0.001704	neg_loss: 0.000502
+2025-04-06 20:40:34 DEBUG    epoch 12: loss: 0.002177	pos_loss: 0.001680	neg_loss: 0.000497
+2025-04-06 20:43:15 DEBUG    epoch 13: loss: 0.002144	pos_loss: 0.001648	neg_loss: 0.000496
+2025-04-06 20:45:56 DEBUG    epoch 14: loss: 0.002110	pos_loss: 0.001620	neg_loss: 0.000490
+2025-04-06 20:48:38 DEBUG    epoch 15: loss: 0.002079	pos_loss: 0.001592	neg_loss: 0.000487
+2025-04-06 20:51:19 DEBUG    epoch 16: loss: 0.002050	pos_loss: 0.001566	neg_loss: 0.000484
+2025-04-06 20:54:00 DEBUG    epoch 17: loss: 0.002020	pos_loss: 0.001540	neg_loss: 0.000481
+2025-04-06 20:56:42 DEBUG    epoch 18: loss: 0.001995	pos_loss: 0.001517	neg_loss: 0.000478
+2025-04-06 20:59:23 DEBUG    epoch 19: loss: 0.001966	pos_loss: 0.001493	neg_loss: 0.000473
+2025-04-06 21:02:04 DEBUG    epoch 20: loss: 0.001941	pos_loss: 0.001470	neg_loss: 0.000471
+2025-04-06 21:02:04 DEBUG    -----------------------valid step-----------------------
+2025-04-06 21:02:39 DEBUG    MRR: 0.152278
+2025-04-06 21:02:39 DEBUG    MR: 1079.977996
+2025-04-06 21:02:39 DEBUG    HIT@1: 0.120515
+2025-04-06 21:02:39 DEBUG    HIT@3: 0.154198
+2025-04-06 21:02:39 DEBUG    HIT@10: 0.210054
+2025-04-06 21:02:39 DEBUG    -----------------------test step-----------------------
+2025-04-06 21:03:42 DEBUG    MRR: 0.153893
+2025-04-06 21:03:42 DEBUG    MR: 2621.005457
+2025-04-06 21:03:42 DEBUG    HIT@1: 0.122101
+2025-04-06 21:03:42 DEBUG    HIT@3: 0.155866
+2025-04-06 21:03:42 DEBUG    HIT@10: 0.211289
+2025-04-06 21:06:31 DEBUG    epoch 21: loss: 0.001920	pos_loss: 0.001452	neg_loss: 0.000469
+2025-04-06 21:09:13 DEBUG    epoch 22: loss: 0.001898	pos_loss: 0.001433	neg_loss: 0.000465
+2025-04-06 21:11:54 DEBUG    epoch 23: loss: 0.001874	pos_loss: 0.001412	neg_loss: 0.000462
+2025-04-06 21:14:36 DEBUG    epoch 24: loss: 0.001850	pos_loss: 0.001391	neg_loss: 0.000459
+2025-04-06 21:17:17 DEBUG    epoch 25: loss: 0.001829	pos_loss: 0.001371	neg_loss: 0.000458
+2025-04-06 21:19:58 DEBUG    epoch 26: loss: 0.001804	pos_loss: 0.001349	neg_loss: 0.000455
+2025-04-06 21:22:39 DEBUG    epoch 27: loss: 0.001779	pos_loss: 0.001325	neg_loss: 0.000454
+2025-04-06 21:25:20 DEBUG    epoch 28: loss: 0.001752	pos_loss: 0.001301	neg_loss: 0.000451
+2025-04-06 21:28:02 DEBUG    epoch 29: loss: 0.001723	pos_loss: 0.001276	neg_loss: 0.000448
+2025-04-06 21:30:43 DEBUG    epoch 30: loss: 0.001698	pos_loss: 0.001253	neg_loss: 0.000445
+2025-04-06 21:33:25 DEBUG    epoch 31: loss: 0.001670	pos_loss: 0.001227	neg_loss: 0.000443
+2025-04-06 21:36:06 DEBUG    epoch 32: loss: 0.001641	pos_loss: 0.001204	neg_loss: 0.000438
+2025-04-06 21:38:47 DEBUG    epoch 33: loss: 0.001616	pos_loss: 0.001179	neg_loss: 0.000438
+2025-04-06 21:41:28 DEBUG    epoch 34: loss: 0.001589	pos_loss: 0.001156	neg_loss: 0.000433
+2025-04-06 21:44:10 DEBUG    epoch 35: loss: 0.001560	pos_loss: 0.001130	neg_loss: 0.000430
+2025-04-06 21:46:51 DEBUG    epoch 36: loss: 0.001533	pos_loss: 0.001105	neg_loss: 0.000428
+2025-04-06 21:49:32 DEBUG    epoch 37: loss: 0.001508	pos_loss: 0.001084	neg_loss: 0.000424
+2025-04-06 21:52:13 DEBUG    epoch 38: loss: 0.001485	pos_loss: 0.001063	neg_loss: 0.000422
+2025-04-06 21:54:55 DEBUG    epoch 39: loss: 0.001457	pos_loss: 0.001039	neg_loss: 0.000418
+2025-04-06 21:57:36 DEBUG    epoch 40: loss: 0.001433	pos_loss: 0.001017	neg_loss: 0.000416
+2025-04-06 21:57:36 DEBUG    -----------------------valid step-----------------------
+2025-04-06 21:58:11 DEBUG    MRR: 0.289976
+2025-04-06 21:58:11 DEBUG    MR: 153.277420
+2025-04-06 21:58:11 DEBUG    HIT@1: 0.223087
+2025-04-06 21:58:11 DEBUG    HIT@3: 0.307718
+2025-04-06 21:58:11 DEBUG    HIT@10: 0.417400
+2025-04-06 21:58:11 DEBUG    -----------------------test step-----------------------
+2025-04-06 21:59:14 DEBUG    MRR: 0.243589
+2025-04-06 21:59:14 DEBUG    MR: 1876.278479
+2025-04-06 21:59:14 DEBUG    HIT@1: 0.187074
+2025-04-06 21:59:14 DEBUG    HIT@3: 0.258186
+2025-04-06 21:59:14 DEBUG    HIT@10: 0.350273
+2025-04-06 22:02:03 DEBUG    epoch 41: loss: 0.001409	pos_loss: 0.000997	neg_loss: 0.000412
+2025-04-06 22:04:44 DEBUG    epoch 42: loss: 0.001384	pos_loss: 0.000975	neg_loss: 0.000409
+2025-04-06 22:07:25 DEBUG    epoch 43: loss: 0.001362	pos_loss: 0.000955	neg_loss: 0.000407
+2025-04-06 22:10:06 DEBUG    epoch 44: loss: 0.001336	pos_loss: 0.000934	neg_loss: 0.000402
+2025-04-06 22:12:48 DEBUG    epoch 45: loss: 0.001312	pos_loss: 0.000913	neg_loss: 0.000399
+2025-04-06 22:15:29 DEBUG    epoch 46: loss: 0.001289	pos_loss: 0.000893	neg_loss: 0.000396
+2025-04-06 22:18:10 DEBUG    epoch 47: loss: 0.001266	pos_loss: 0.000874	neg_loss: 0.000392
+2025-04-06 22:20:51 DEBUG    epoch 48: loss: 0.001244	pos_loss: 0.000853	neg_loss: 0.000391
+2025-04-06 22:23:32 DEBUG    epoch 49: loss: 0.001221	pos_loss: 0.000835	neg_loss: 0.000385
+2025-04-06 22:26:14 DEBUG    epoch 50: loss: 0.001197	pos_loss: 0.000816	neg_loss: 0.000381
+2025-04-06 22:28:55 DEBUG    epoch 51: loss: 0.001167	pos_loss: 0.000803	neg_loss: 0.000365
+2025-04-06 22:31:36 DEBUG    epoch 52: loss: 0.001119	pos_loss: 0.000761	neg_loss: 0.000357
+2025-04-06 22:34:16 DEBUG    epoch 53: loss: 0.001103	pos_loss: 0.000746	neg_loss: 0.000357
+2025-04-06 22:36:57 DEBUG    epoch 54: loss: 0.001089	pos_loss: 0.000735	neg_loss: 0.000355
+2025-04-06 22:39:38 DEBUG    epoch 55: loss: 0.001075	pos_loss: 0.000721	neg_loss: 0.000354
+2025-04-06 22:42:19 DEBUG    epoch 56: loss: 0.001061	pos_loss: 0.000710	neg_loss: 0.000352
+2025-04-06 22:45:00 DEBUG    epoch 57: loss: 0.001048	pos_loss: 0.000699	neg_loss: 0.000349
+2025-04-06 22:47:41 DEBUG    epoch 58: loss: 0.001037	pos_loss: 0.000688	neg_loss: 0.000349
+2025-04-06 22:50:23 DEBUG    epoch 59: loss: 0.001021	pos_loss: 0.000676	neg_loss: 0.000344
+2025-04-06 22:53:04 DEBUG    epoch 60: loss: 0.001007	pos_loss: 0.000664	neg_loss: 0.000343
+2025-04-06 22:53:04 DEBUG    -----------------------valid step-----------------------
+2025-04-06 22:53:38 DEBUG    MRR: 0.465020
+2025-04-06 22:53:38 DEBUG    MR: 40.230027
+2025-04-06 22:53:38 DEBUG    HIT@1: 0.374238
+2025-04-06 22:53:38 DEBUG    HIT@3: 0.501354
+2025-04-06 22:53:38 DEBUG    HIT@10: 0.638626
+2025-04-06 22:53:38 DEBUG    -----------------------test step-----------------------
+2025-04-06 22:54:41 DEBUG    MRR: 0.302321
+2025-04-06 22:54:41 DEBUG    MR: 1806.925136
+2025-04-06 22:54:41 DEBUG    HIT@1: 0.228001
+2025-04-06 22:54:41 DEBUG    HIT@3: 0.326398
+2025-04-06 22:54:41 DEBUG    HIT@10: 0.443895
+2025-04-06 22:57:30 DEBUG    epoch 61: loss: 0.000997	pos_loss: 0.000654	neg_loss: 0.000344
+2025-04-06 23:00:11 DEBUG    epoch 62: loss: 0.000982	pos_loss: 0.000643	neg_loss: 0.000339
+2025-04-06 23:02:52 DEBUG    epoch 63: loss: 0.000972	pos_loss: 0.000634	neg_loss: 0.000337
+2025-04-06 23:05:33 DEBUG    epoch 64: loss: 0.000957	pos_loss: 0.000622	neg_loss: 0.000335
+2025-04-06 23:08:14 DEBUG    epoch 65: loss: 0.000944	pos_loss: 0.000612	neg_loss: 0.000332
+2025-04-06 23:10:55 DEBUG    epoch 66: loss: 0.000933	pos_loss: 0.000603	neg_loss: 0.000330
+2025-04-06 23:13:36 DEBUG    epoch 67: loss: 0.000921	pos_loss: 0.000592	neg_loss: 0.000328
+2025-04-06 23:16:17 DEBUG    epoch 68: loss: 0.000908	pos_loss: 0.000583	neg_loss: 0.000326
+2025-04-06 23:18:58 DEBUG    epoch 69: loss: 0.000898	pos_loss: 0.000575	neg_loss: 0.000323
+2025-04-06 23:21:39 DEBUG    epoch 70: loss: 0.000883	pos_loss: 0.000563	neg_loss: 0.000320
+2025-04-06 23:24:20 DEBUG    epoch 71: loss: 0.000873	pos_loss: 0.000555	neg_loss: 0.000318
+2025-04-06 23:27:01 DEBUG    epoch 72: loss: 0.000861	pos_loss: 0.000546	neg_loss: 0.000316
+2025-04-06 23:29:42 DEBUG    epoch 73: loss: 0.000849	pos_loss: 0.000536	neg_loss: 0.000313
+2025-04-06 23:32:23 DEBUG    epoch 74: loss: 0.000838	pos_loss: 0.000528	neg_loss: 0.000310
+2025-04-06 23:35:04 DEBUG    epoch 75: loss: 0.000827	pos_loss: 0.000518	neg_loss: 0.000308
+2025-04-06 23:37:45 DEBUG    epoch 76: loss: 0.000816	pos_loss: 0.000510	neg_loss: 0.000305
+2025-04-06 23:40:26 DEBUG    epoch 77: loss: 0.000804	pos_loss: 0.000501	neg_loss: 0.000303
+2025-04-06 23:43:07 DEBUG    epoch 78: loss: 0.000791	pos_loss: 0.000492	neg_loss: 0.000300
+2025-04-06 23:45:48 DEBUG    epoch 79: loss: 0.000783	pos_loss: 0.000486	neg_loss: 0.000297
+2025-04-06 23:48:28 DEBUG    epoch 80: loss: 0.000769	pos_loss: 0.000476	neg_loss: 0.000293
+2025-04-06 23:48:28 DEBUG    -----------------------valid step-----------------------
+2025-04-06 23:49:03 DEBUG    MRR: 0.615185
+2025-04-06 23:49:03 DEBUG    MR: 22.604942
+2025-04-06 23:49:03 DEBUG    HIT@1: 0.511341
+2025-04-06 23:49:03 DEBUG    HIT@3: 0.672139
+2025-04-06 23:49:03 DEBUG    HIT@10: 0.817197
+2025-04-06 23:49:03 DEBUG    -----------------------test step-----------------------
+2025-04-06 23:50:06 DEBUG    MRR: 0.319358
+2025-04-06 23:50:06 DEBUG    MR: 1790.086801
+2025-04-06 23:50:06 DEBUG    HIT@1: 0.240450
+2025-04-06 23:50:06 DEBUG    HIT@3: 0.349079
+2025-04-06 23:50:06 DEBUG    HIT@10: 0.471692
+2025-04-06 23:52:55 DEBUG    epoch 81: loss: 0.000760	pos_loss: 0.000469	neg_loss: 0.000292
+2025-04-06 23:55:36 DEBUG    epoch 82: loss: 0.000748	pos_loss: 0.000459	neg_loss: 0.000289
+2025-04-06 23:58:17 DEBUG    epoch 83: loss: 0.000739	pos_loss: 0.000453	neg_loss: 0.000286
+2025-04-07 00:00:58 DEBUG    epoch 84: loss: 0.000727	pos_loss: 0.000444	neg_loss: 0.000283
+2025-04-07 00:03:39 DEBUG    epoch 85: loss: 0.000719	pos_loss: 0.000438	neg_loss: 0.000281
+2025-04-07 00:06:20 DEBUG    epoch 86: loss: 0.000709	pos_loss: 0.000431	neg_loss: 0.000277
+2025-04-07 00:09:01 DEBUG    epoch 87: loss: 0.000697	pos_loss: 0.000422	neg_loss: 0.000274
+2025-04-07 00:11:41 DEBUG    epoch 88: loss: 0.000690	pos_loss: 0.000417	neg_loss: 0.000273
+2025-04-07 00:14:22 DEBUG    epoch 89: loss: 0.000680	pos_loss: 0.000410	neg_loss: 0.000270
+2025-04-07 00:17:03 DEBUG    epoch 90: loss: 0.000671	pos_loss: 0.000404	neg_loss: 0.000268
+2025-04-07 00:19:43 DEBUG    epoch 91: loss: 0.000660	pos_loss: 0.000396	neg_loss: 0.000264
+2025-04-07 00:22:24 DEBUG    epoch 92: loss: 0.000650	pos_loss: 0.000388	neg_loss: 0.000261
+2025-04-07 00:25:05 DEBUG    epoch 93: loss: 0.000643	pos_loss: 0.000384	neg_loss: 0.000260
+2025-04-07 00:27:46 DEBUG    epoch 94: loss: 0.000635	pos_loss: 0.000379	neg_loss: 0.000256
+2025-04-07 00:30:27 DEBUG    epoch 95: loss: 0.000625	pos_loss: 0.000372	neg_loss: 0.000253
+2025-04-07 00:33:08 DEBUG    epoch 96: loss: 0.000615	pos_loss: 0.000365	neg_loss: 0.000250
+2025-04-07 00:35:49 DEBUG    epoch 97: loss: 0.000604	pos_loss: 0.000356	neg_loss: 0.000248
+2025-04-07 00:38:30 DEBUG    epoch 98: loss: 0.000597	pos_loss: 0.000352	neg_loss: 0.000245
+2025-04-07 00:41:10 DEBUG    epoch 99: loss: 0.000589	pos_loss: 0.000346	neg_loss: 0.000243
+2025-04-07 00:43:51 DEBUG    epoch 100: loss: 0.000582	pos_loss: 0.000342	neg_loss: 0.000240
+2025-04-07 00:43:51 DEBUG    -----------------------valid step-----------------------
+2025-04-07 00:44:26 DEBUG    MRR: 0.753338
+2025-04-07 00:44:26 DEBUG    MR: 15.512018
+2025-04-07 00:44:26 DEBUG    HIT@1: 0.665200
+2025-04-07 00:44:26 DEBUG    HIT@3: 0.816858
+2025-04-07 00:44:26 DEBUG    HIT@10: 0.908599
+2025-04-07 00:44:26 DEBUG    -----------------------test step-----------------------
+2025-04-07 00:45:28 DEBUG    MRR: 0.325706
+2025-04-07 00:45:28 DEBUG    MR: 1684.913881
+2025-04-07 00:45:28 DEBUG    HIT@1: 0.245225
+2025-04-07 00:45:28 DEBUG    HIT@3: 0.357947
+2025-04-07 00:45:28 DEBUG    HIT@10: 0.478001
+2025-04-07 00:45:38 DEBUG    -----------------------best test step-----------------------
+2025-04-07 00:46:40 DEBUG    MRR: 0.325709
+2025-04-07 00:46:40 DEBUG    MR: 1684.912858
+2025-04-07 00:46:40 DEBUG    HIT@1: 0.245225
+2025-04-07 00:46:40 DEBUG    HIT@3: 0.357947
+2025-04-07 00:46:40 DEBUG    HIT@10: 0.478001

@@ -64,5 +64,10 @@ def check_sampling(sampling_path):
                     print(triple[2] - len(df_ent))
 
 
-check_sampling('../data/YAGO_sampled')
+check_sampling('../data/YAGO_sampled_passive')
+# %%
+
+with open('../data/YAGO_sampled_passive_filter/LMET_train.pkl', 'rb') as f:
+    LMET = pickle.load(f)
+
 # %%

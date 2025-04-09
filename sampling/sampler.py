@@ -85,7 +85,12 @@ def sample_graph(graph_folder, output_folder):
     make_pkl(output_folder)
 
     
-
+#%%
 sample_graph("../data/YAGO43kET", "../data/YAGO_sampled")
+
+# %%
+
+
+make_pkl("../data/YAGO_sampled_passive_filter")
 
 # %%
