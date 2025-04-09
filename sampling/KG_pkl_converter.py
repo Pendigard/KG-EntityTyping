@@ -154,7 +154,7 @@ def compare_pkl_files(file1, file2):
 
 if __name__ == "__main__":
     # Exemple d'utilisation
-    kg_set = 'test'
+    kg_set = 'valid'
     KG_path = '../data/YAGO43kET' # chemin vers le dossier contenant les fichiers KG non échantillonnés
     # Les fichiers ET non échantillonné et les .tsv
     KG_file = '../data/YAGO43kET/KG_train.txt' # KG samplé toujours train
