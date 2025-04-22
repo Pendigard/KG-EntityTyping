@@ -7,12 +7,12 @@ from KG_graph_sampler import KG_sampling
 from filter_ET import filter_ET
 from KG_pkl_converter import convert_to_pkl
 
-def make_entities(graph_folder, output_folder):
+def make_entities(output_folder):
     """
     Create a mapping of entities to indices and save it to a file.
 
     """
-    df_kg = pd.read_csv(os.path.join(graph_folder, 'KG_train.txt'), sep="\t", header=None, names=["head", "relation", "tail"])
+    df_kg = pd.read_csv(os.path.join(output_folder, 'KG_train.txt'), sep="\t", header=None, names=["head", "relation", "tail"])
     entities = set(df_kg["head"]).union(set(df_kg["tail"]))
     entity_to_index = {entity: i for i, entity in enumerate(entities)}
     
@@ -47,7 +47,7 @@ def make_ET_types(output_folder):
         for type_, index in type_to_index.items():
             f.write(f"{type_}\t{index}\n")
 
-def make_pkl(output_folder):
+def make_pkl(output_folder, banned_ids=None, valid=True):
     ET_types = ['test', 'train', 'valid']
     for ET_type in ET_types:
         ET_file = os.path.join(output_folder, f'ET_{ET_type}.txt')
@@ -55,7 +55,7 @@ def make_pkl(output_folder):
         KG_sampled_file = os.path.join(output_folder, 'KG_train.txt')
         ET_output_file = os.path.join(output_folder, f'ET_{ET_type}.txt')
         print(f'Converting ET file to pkl: {ET_file}')
-        convert_to_pkl(output_folder, KG_sampled_file, ET_output_file, pkl_output_file)
+        convert_to_pkl(output_folder, KG_sampled_file, ET_output_file, pkl_output_file, banned_ids=banned_ids, valid=valid)
 
 def sample_graph(graph_folder, output_folder):
     """
@@ -91,6 +91,10 @@ sample_graph("../data/YAGO43kET", "../data/YAGO_sampled")
 # %%
 
 
-make_pkl("../data/YAGO_sampled_passive_filter")
+make_pkl("../data/YAGO_sampled_mirror_true", valid=True)
+
+# %%
+
+make_entities("../data/YAGO_sampled_passive")
 
 # %%

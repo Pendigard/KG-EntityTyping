@@ -19,7 +19,7 @@ def get_cluster_name_from_type(type_name):
     return type_name.split('_')[1]
 
 #encapsulation: vous appelez directement cette fonction et lui donne touts les parametres et il fait tout.
-def convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc = get_cluster_name_from_type):
+def convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc = get_cluster_name_from_type, banned_ids=None, valid=True):
     tqdm.pandas()
 
     # loading......
@@ -38,8 +38,11 @@ def convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc =
     df_et_train = pd.read_csv(os.path.join(KG_path, 'ET_train.txt'), sep='\t', header=None, names=['entity', 'type'])
     df_et_valid = pd.read_csv(os.path.join(KG_path, 'ET_valid.txt'), sep='\t', header=None, names=['entity', 'type'])
 
-    df_et_train_full = pd.concat([df_et_train, df_et_valid], ignore_index=True)
+    if valid:
+        df_et_train_full = pd.concat([df_et_train, df_et_valid], ignore_index=True)
     # Le pkl original de LMET est construit sur le train et le valid, donc on fait pareil ici
+    else:
+        df_et_train_full = df_et_train
 
     # select les entities dans kg
     kg_entities = set(df_kg['entity']).union(set(df_kg['entity_2']))
@@ -87,6 +90,7 @@ def convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc =
     for eid in tqdm(df_ent_final['id']):
         et = df_et_id[df_et_id['ent_id'] == eid].values.tolist()
         kg = df_kg_id[(df_kg_id['id_1'] == eid) | (df_kg_id['id_2'] == eid)].values.tolist()
+        kg_tmp = []
         if len(et) == 0: # Cas où il n'y a pas de type pour l'entité en train
             # On ajoute le dernier type (Comme dans le LMET original)
             last_type = df_type['id'].iloc[-1]
@@ -97,8 +101,10 @@ def convert_to_pkl(KG_path, KG_file, ET_file, output_file, get_clust_name_fonc =
             if kg_rel[2] == eid: # Cas où la relation est entrante, ent1 rel ent2 -> ent2 rel+num_cluster+num_rel ent1 (Comme dans le LMET original)
                 kg_rel = kg_rel[::-1]
                 kg_rel[1] = kg_rel[1] + len(df_clust) + len(df_rel)
-            kg[i] = kg_rel
-        triplets_list.append((et, kg, eid))
+            if banned_ids is not None and kg_rel[2]>= banned_ids:
+                continue
+            kg_tmp.append(kg_rel)
+        triplets_list.append((et, kg_tmp, eid))
         
     # sauvegarder comme pkl, le nom est donne par vous dans la parametre output_file
     if output_file is not None:

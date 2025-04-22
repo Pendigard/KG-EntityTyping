@@ -64,10 +64,42 @@ def check_sampling(sampling_path):
                     print(triple[2] - len(df_ent))
 
 
-check_sampling('../data/YAGO_sampled_passive')
+check_sampling('../data/YAGO_sampled_mirror_true')
 # %%
 
-with open('../data/YAGO_sampled_passive_filter/LMET_train.pkl', 'rb') as f:
+with open('../data/YAGO_sampled_mirror_true/LMET_train.pkl', 'rb') as f:
     LMET = pickle.load(f)
+
+# %%
+
+i = 0
+num_mirror = 0
+for et, kg, ent in LMET:
+    if ent < 42335:
+        for triplet in kg:
+            if triplet[0] >= 42335 or triplet[2] >= 42335:
+                print('problem with kg')
+                print(ent, triplet)
+                i += 1
+
+    if ent >= 42335:
+        num_mirror += 1
+        if len(kg) == 0:
+            print('problem with kg')
+            print(ent, kg)
+            i += 1
+print(i)
+print(num_mirror)
+# %%
+
+df_ent = pd.read_csv('../data/YAGO_sampled_mirror/entities.tsv', sep='\t', header=None, names=['name', 'id'])
+i=0
+for et, kg, ent in LMET:
+    if ent not in df_ent['id'].values:
+        print('problem with ent')
+        print(ent)
+        i += 1
+
+print(i)
 
 # %%
